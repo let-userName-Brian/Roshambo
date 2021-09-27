@@ -9,7 +9,7 @@ class Game {
         this.playerOne = playerOne
         this.playerTwo = playerTwo
     }
-    evaluate() {
+    logic() {
         let moveOne = this.playerOne.getMove()
         let moveTwo = this.playerTwo.getMove()
         console.log(this.playerOne.getName(), ':', moveOne)
@@ -57,4 +57,4 @@ class UserMove {
 
 const userInput = argv.move
 const game = new Game(new UserMove(userInput), new ComputerMove())
-game.evaluate()
+game.logic()
